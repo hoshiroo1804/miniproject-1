@@ -3,7 +3,7 @@ import { Navbar, Container, Nav, Card, Row, Col, NavDropdown } from 'react-boots
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import './Body.css';
+import './body.css';
 
 const Landing = () => {
   const headerStyle = {
