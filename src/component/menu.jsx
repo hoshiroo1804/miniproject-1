@@ -132,7 +132,7 @@ class MenuMinuman extends Component {
             </Link>
           </div>
 
-          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center', color: "white" }}>Coffe Variant</h1>
+          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center'}}>Coffe Variant</h1>
           <Carousel>
             {this.state.menu1.map((item, index) => (
               <Carousel.Item key={item.id}>
@@ -154,7 +154,7 @@ class MenuMinuman extends Component {
 
         <div className="body">
           <br />
-          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center', color: "white" }}>Fresh Variant</h1>
+          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center'}}>Fresh Variant</h1>
           <Carousel>
             {this.state.menu2.map((item, index) => (
               <Carousel.Item key={item.id}>
@@ -178,7 +178,7 @@ class MenuMinuman extends Component {
     {/*section body*/}
         <div className="body2">
           <br />
-          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center', color: "#2B7A78" }}>Full Variant</h1>
+          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center' }}>Full Variant</h1>
           <br />
           <Container>
             <Row>
