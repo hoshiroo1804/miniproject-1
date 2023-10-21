@@ -1,0 +1,320 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #3AAFA9; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  }
+  
+  .body2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 1%;
+    width: 100%;
+    background-color: #def2f1; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  }
+  
+.centered-text {
+    text-align: center;
+    background-color: #189cc0; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+.title-2,
+.title-3 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.fot-3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+footer {
+  height: inherit;
+  color: white;
+  background-color: #3AAFA9; /* Ganti dengan warna latar belakang yang Anda inginkan */
+}
+
+.text {
+  text-align: center;
+}
+
+.sikil {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #2B7A78;
+}
+
+/* MenuMinuman.css */
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.menu-image {
+  max-width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.menu-item h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.menu-price {
+  font-size: 14px;
+  color: #888;
+}
+
+
+/* Sesuaikan file CSS dengan komponen MenuMinuman.js */
+
+/* Kontainer untuk daftar menu */
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Setiap item menu */
+.menu-item {
+  width: 280px;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efek transisi saat item menu dihover */
+.menu-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gambar menu */
+.menu-image {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Nama menu */
+.menu-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #2B7A78;
+}
+
+/* Harga menu */
+.menu-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FF5733; /* Ganti warna harga sesuai preferensi Anda */
+}
+
+/* Media query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .menu-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/* Media query untuk tampilan tablet */
+@media (min-width: 769px) and (max-width: 991px) {
+  .menu-item {
+    width: 47%;
+    margin: 15px 1%;
+  }
+}
+
+
+/* Css Form Checkout */
+
+/* Styling container */
+.order-form-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+}
+
+/* Styling form row */
+.form-row {
+  display: flex;
+  flex-direction: row; /* Mengatur elemen form secara horizontal */
+  justify-content: space-between; /* Memposisikan elemen secara horizontal dengan jarak di antara */
+  align-items: center; /* Memposisikan elemen secara vertikal di tengah */
+  margin: 10px 0; /* Mengatur margin atas dan bawah */
+}
+
+/* Label style */
+label {
+  width: 90px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: right;
+}
+
+/* Input style */
+input[type="text"],
+textarea {
+  width: 48%; /* Mengisi hampir setengah ruang */
+  padding: 8px;
+  border: 2px solid #2B7A78;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* CSS untuk tata letak formulir */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 0 0 calc(50% - 10px); /* Atur lebar elemen formulir */
+  margin-bottom: 10px;
+}
+
+/* Atur lebar label agar tetap sejajar dengan input dan di sebelah kiri */
+.form-group label {
+  display: block;
+  width: 100%;
+  text-align: left; /* Atur teks label di sebelah kiri */
+  margin-bottom: 5px; /* Jarakkan label dari input */
+}
+
+/* Atur lebar input agar sejajar dengan label */
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Atur elemen textarea agar sejajar dengan label */
+.form-group textarea {
+  height: 120px;
+}
+
+/* Atur elemen select agar sejajar dengan label */
+.form-group select {
+  height: 40px;
+}
+
+/* CSS untuk tombol Kirim Pesanan */
+button[type="submit"] {
+  background-color: #2B7A78;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #255E5C;
+}
+
+
+
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+/* Styling select element */
+select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Styling select option */
+select option {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Styling when dropdown is focused */
+select:focus {
+  outline: none;
+  border: 2px solid #2B7A78;
+}
+
+/* CSS untuk tampilan dropdown yang diperbaiki */
+.select-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-column {
+  flex: 1;
+  margin-right: 10px; /* Memberikan margin antara kolom */
+}
+
+.dropdown-item {
+  margin-bottom: 20px; /* Memberikan margin antara dropdown */
+}
+
+/* Menambahkan CSS sesuai kebutuhan untuk elemen-elemen dropdown dan label */
+.select-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.select-container h6 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
