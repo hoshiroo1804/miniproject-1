@@ -46,7 +46,7 @@ const Landing = () => {
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
             <img
-              src="src/gambar/icon/kopi.png"
+              src="/src/gambar/icon/kopi.png"
               alt="Static Image"
               style={{ maxWidth: "400px", maxHeight: "300px" }}
             />
