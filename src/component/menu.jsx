@@ -11,60 +11,60 @@ class MenuMinuman extends Component {
     super(props);
     this.state = {
       menu: [
-        { id: 1, nama: 'Grape Smothies', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres4.jpeg',},
-        { id: 2, nama: 'Strawberry Milkshake', harga: 'Rp 25.000', gambar: 'src/gambar/fresh/fres5.jpeg', },
-        { id: 3, nama: 'Apple Juice', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres6.jpeg', },
-        { id: 4, nama: 'Matcha Creame', harga: 'Rp 25.000', gambar: 'src/gambar/fresh/fres7.jpeg', },
-        { id: 5, nama: 'Berry Squash', harga: 'Rp 18.000', gambar: 'src/gambar/fresh/fres8.jpeg', },
-        { id: 6, nama: 'Kiwi Squash', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres9.jpeg', },
-        { id: 7, nama: 'Lemon Squash', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres10.jpeg', },
-        { id: 8, nama: 'Squash Berry Mix', harga: 'Rp 18.000', gambar: 'src/gambar/fresh/fres11.jpeg', },
-        { id: 9, nama: 'Matcha Berry', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres12.jpeg',},
-        { id: 10, nama: 'Aren Matcha', harga: 'Rp 25.000', gambar: 'src/gambar/fresh/fres13.jpeg', },
-        { id: 11, nama: 'Peach Squash', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres14.jpeg', },
-        { id: 12, nama: 'Kiwi Lemon Squash', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres15.jpeg', },
-        { id: 13, nama: 'Kiwi Orange Creame', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres16.jpeg', },
-        { id: 14, nama: 'Mix Squash', harga: 'Rp 18.000', gambar: 'src/gambar/fresh/fres17.jpeg', },
-        { id: 15, nama: 'Sea Squash', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres18.jpeg', },
-        { id: 16, nama: 'Lemon Berry Fun', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres19.jpeg', },
-        { id: 17, nama: 'Orange Juice', harga: 'Rp 12.000', gambar: 'src/gambar/fresh/fres20.jpeg', },
-        { id: 18, nama: 'Orange Blood', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres21.jpeg', },
-        { id: 19, nama: 'Orange', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres19.jpeg', },
-        { id: 20, nama: 'Caffe Latte', harga: 'Rp 25.000', gambar: 'src/gambar/caffe/kopi2.jpeg', },
-        { id: 21, nama: 'Dalgonna Coffee', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi3.jpeg', },
-        { id: 22, nama: 'Creame Latte', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi4.jpeg', },
-        { id: 23, nama: 'Cream Puff', harga: 'Rp 25.000', gambar: 'src/gambar/caffe/kopi5.jpeg', },
-        { id: 24, nama: 'Americano', harga: 'Rp 105.000', gambar: 'src/gambar/caffe/kopi6.jpeg', },
-        { id: 25, nama: 'Espresso', harga: 'Rp 15.000', gambar: 'src/gambar/caffe/kopi7.jpeg', },
-        { id: 26, nama: 'Latte', harga: 'Rp 15.000', gambar: 'src/gambar/caffe/kopi8.jpeg', },
-        { id: 27, nama: 'Ice Cream Coffe', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi9.jpeg', },
-        { id: 28, nama: 'Cappucino', harga: 'Rp 15.000', gambar: 'src/gambar/caffe/kopi10.jpeg',},
-        { id: 29, nama: 'Dolce Latte', harga: 'Rp 18.000', gambar: 'src/gambar/caffe/kopi11.jpeg', },
-        { id: 30, nama: 'Coffe', harga: 'Rp 10.000', gambar: 'src/gambar/caffe/kopi12.jpeg',},
-        { id: 31, nama: 'Chocho Latte', harga: 'Rp 15.000', gambar: 'src/gambar/caffe/kopi13.jpeg', },
-        { id: 32, nama: 'Milk Coffe', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi14.jpeg', },
-        { id: 33, nama: 'Ice Coffe', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi15.jpeg', },
-        { id: 34, nama: 'Milky Latte', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi16.jpeg', },
-        { id: 35, nama: 'Art Latte', harga: 'Rp 25.000', gambar: 'src/gambar/caffe/kopi17.jpeg', },
-        { id: 36, nama: 'Ice Creame Americano', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi1.jpeg', },
+        { id: 1, nama: 'Grape Smothies', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres4.jpeg',},
+        { id: 2, nama: 'Strawberry Milkshake', harga: 'Rp 25.000', gambar: '/gambar/fresh/fres5.jpeg', },
+        { id: 3, nama: 'Apple Juice', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres6.jpeg', },
+        { id: 4, nama: 'Matcha Creame', harga: 'Rp 25.000', gambar: '/gambar/fresh/fres7.jpeg', },
+        { id: 5, nama: 'Berry Squash', harga: 'Rp 18.000', gambar: '/gambar/fresh/fres8.jpeg', },
+        { id: 6, nama: 'Kiwi Squash', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres9.jpeg', },
+        { id: 7, nama: 'Lemon Squash', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres10.jpeg', },
+        { id: 8, nama: 'Squash Berry Mix', harga: 'Rp 18.000', gambar: '/gambar/fresh/fres11.jpeg', },
+        { id: 9, nama: 'Matcha Berry', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres12.jpeg',},
+        { id: 10, nama: 'Aren Matcha', harga: 'Rp 25.000', gambar: '/gambar/fresh/fres13.jpeg', },
+        { id: 11, nama: 'Peach Squash', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres14.jpeg', },
+        { id: 12, nama: 'Kiwi Lemon Squash', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres15.jpeg', },
+        { id: 13, nama: 'Kiwi Orange Creame', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres16.jpeg', },
+        { id: 14, nama: 'Mix Squash', harga: 'Rp 18.000', gambar: '/gambar/fresh/fres17.jpeg', },
+        { id: 15, nama: 'Sea Squash', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres18.jpeg', },
+        { id: 16, nama: 'Lemon Berry Fun', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres19.jpeg', },
+        { id: 17, nama: 'Orange Juice', harga: 'Rp 12.000', gambar: '/gambar/fresh/fres20.jpeg', },
+        { id: 18, nama: 'Orange Blood', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres21.jpeg', },
+        { id: 19, nama: 'Orange', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres19.jpeg', },
+        { id: 20, nama: 'Caffe Latte', harga: 'Rp 25.000', gambar: '/gambar/caffe/kopi2.jpeg', },
+        { id: 21, nama: 'Dalgonna Coffee', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi3.jpeg', },
+        { id: 22, nama: 'Creame Latte', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi4.jpeg', },
+        { id: 23, nama: 'Cream Puff', harga: 'Rp 25.000', gambar: '/gambar/caffe/kopi5.jpeg', },
+        { id: 24, nama: 'Americano', harga: 'Rp 105.000', gambar: '/gambar/caffe/kopi6.jpeg', },
+        { id: 25, nama: 'Espresso', harga: 'Rp 15.000', gambar: '/gambar/caffe/kopi7.jpeg', },
+        { id: 26, nama: 'Latte', harga: 'Rp 15.000', gambar: '/gambar/caffe/kopi8.jpeg', },
+        { id: 27, nama: 'Ice Cream Coffe', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi9.jpeg', },
+        { id: 28, nama: 'Cappucino', harga: 'Rp 15.000', gambar: '/gambar/caffe/kopi10.jpeg',},
+        { id: 29, nama: 'Dolce Latte', harga: 'Rp 18.000', gambar: '/gambar/caffe/kopi11.jpeg', },
+        { id: 30, nama: 'Coffe', harga: 'Rp 10.000', gambar: '/gambar/caffe/kopi12.jpeg',},
+        { id: 31, nama: 'Chocho Latte', harga: 'Rp 15.000', gambar: '/gambar/caffe/kopi13.jpeg', },
+        { id: 32, nama: 'Milk Coffe', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi14.jpeg', },
+        { id: 33, nama: 'Ice Coffe', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi15.jpeg', },
+        { id: 34, nama: 'Milky Latte', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi16.jpeg', },
+        { id: 35, nama: 'Art Latte', harga: 'Rp 25.000', gambar: '/gambar/caffe/kopi17.jpeg', },
+        { id: 36, nama: 'Ice Creame Americano', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi1.jpeg', },
 
       ],
       menu1: [
-        { id: 1, nama: 'Cream Latte', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi1.jpeg', },
-        { id: 2, nama: 'Milk Latte', harga: 'Rp 18.000', gambar: 'src/gambar/caffe/kopi2.jpeg', },
-        { id: 3, nama: 'Dalgona Coffee', harga: 'Rp 20.000', gambar: 'src/gambar/caffe/kopi3.jpeg', },
-        { id: 4, nama: 'Chocolate Latte', harga: 'Rp 25.000', gambar: 'src/gambar/caffe/kopi4.jpeg', },
-        { id: 5, nama: 'Kopi Hitam', harga: 'Rp 8.000', gambar: 'src/gambar/caffe/kopi5.jpeg', },
-        { id: 6, nama: 'Jus Jeruk', harga: 'Rp 10.000', gambar: 'src/gambar/caffe/kopi6.jpeg', },
+        { id: 1, nama: 'Cream Latte', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi1.jpeg', },
+        { id: 2, nama: 'Milk Latte', harga: 'Rp 18.000', gambar: '/gambar/caffe/kopi2.jpeg', },
+        { id: 3, nama: 'Dalgona Coffee', harga: 'Rp 20.000', gambar: '/gambar/caffe/kopi3.jpeg', },
+        { id: 4, nama: 'Chocolate Latte', harga: 'Rp 25.000', gambar: '/gambar/caffe/kopi4.jpeg', },
+        { id: 5, nama: 'Kopi Hitam', harga: 'Rp 8.000', gambar: '/gambar/caffe/kopi5.jpeg', },
+        { id: 6, nama: 'Jus Jeruk', harga: 'Rp 10.000', gambar: '/gambar/caffe/kopi6.jpeg', },
 
       ],
         menu2: [
-          { id: 4, nama: 'Grape Smothies', harga: 'Rp 20.000', gambar: 'src/gambar/fresh/fres4.jpeg', },
-          { id: 5, nama: 'Strawberry Milkshake', harga: 'Rp 25.000', gambar: 'src/gambar/fresh/fres5.jpeg', },
-          { id: 6, nama: 'Apple Juice', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres6.jpeg', },
-          { id: 7, nama: 'Matcha Creame', harga: 'Rp 25.000', gambar: 'src/gambar/fresh/fres7.jpeg', },
-          { id: 8, nama: 'Berry Squash', harga: 'Rp 18.000', gambar: 'src/gambar/fresh/fres8.jpeg', },
-          { id: 9, nama: 'Kiwi Squash', harga: 'Rp 15.000', gambar: 'src/gambar/fresh/fres9.jpeg', },
+          { id: 4, nama: 'Grape Smothies', harga: 'Rp 20.000', gambar: '/gambar/fresh/fres4.jpeg', },
+          { id: 5, nama: 'Strawberry Milkshake', harga: 'Rp 25.000', gambar: '/gambar/fresh/fres5.jpeg', },
+          { id: 6, nama: 'Apple Juice', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres6.jpeg', },
+          { id: 7, nama: 'Matcha Creame', harga: 'Rp 25.000', gambar: '/gambar/fresh/fres7.jpeg', },
+          { id: 8, nama: 'Berry Squash', harga: 'Rp 18.000', gambar: '/gambar/fresh/fres8.jpeg', },
+          { id: 9, nama: 'Kiwi Squash', harga: 'Rp 15.000', gambar: '/gambar/fresh/fres9.jpeg', },
         ],
       };
     }
@@ -132,7 +132,7 @@ class MenuMinuman extends Component {
             </Link>
           </div>
 
-          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center'}}>Coffe Variant</h1>
+          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: 'white', textAlign: 'center'}}>Coffe Variant</h1>
           <Carousel>
             {this.state.menu1.map((item, index) => (
               <Carousel.Item key={item.id}>
@@ -154,7 +154,7 @@ class MenuMinuman extends Component {
 
         <div className="body">
           <br />
-          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: '#2B7A78', textAlign: 'center'}}>Fresh Variant</h1>
+          <h1 style={{ fontSize: '50px', fontFamily: "Garamond, serif", color: 'white', textAlign: 'center'}}>Fresh Variant</h1>
           <Carousel>
             {this.state.menu2.map((item, index) => (
               <Carousel.Item key={item.id}>

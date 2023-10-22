@@ -45,8 +45,8 @@ const Landing = () => {
             </Link>
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
-            <img
-              src="/src/gambar/icon/kopi.png"
+          <img
+              src="/gambar/icon/kopi.png"
               alt="Static Image"
               style={{ maxWidth: "400px", maxHeight: "300px" }}
             />
@@ -54,14 +54,14 @@ const Landing = () => {
         </div>
       </div>
 
-      <div style={{ textAlign: "center" }}><br />
-        <Carousel>
-          <Carousel.Item>
-            <Row>
-              <Col md={4}>
-                <Card>
-                  <Card.Img variant="top" src="src/gambar/caffe/kopi1.jpeg" style={{ width: '100%' }} />
-                  <Card.Body>
+      <div style={{ textAlign: "center" }}>
+  <Carousel>
+    <Carousel.Item>
+      <Row>
+        <Col md={4}>
+          <Card>
+            <Card.Img variant="top" src="/gambar/caffe/kopi1.jpeg" style={{ width: '100%' }} />
+            <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Ice Americano</span></Card.Title><br />
                     <Card.Text>
                       <span style={{ color: "#2B7A78" }}>Ice Americano dikenal dengan ciri khasnya yang memiliki rasa kopi yang kuat dan segar, tanpa tambahan susu atau gula. Minuman ini cocok bagi pecinta kopi yang menyukai rasa kopi yang murni dan ringan, dengan sentuhan penyegaran dari es.</span>
@@ -69,12 +69,12 @@ const Landing = () => {
                       <span style={{ color: "red" }}>Harga: Rp.20.000</span>
                     </Card.Text>
                   </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card>
-                  <Card.Img variant="top" src="src/gambar/fresh/fres1.jpeg" style={{ width: '100%' }} />
-                  <Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card>
+            <Card.Img variant="top" src="/gambar/fresh/fres1.jpeg" style={{ width: '100%' }} />
+            <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Matcha Oreo</span></Card.Title>
                     <Card.Text>
                       <span style={{ color: "#2B7A78" }}>Minuman Matcha Oreo populer di kalangan pecinta matcha dan pencinta Oreo yang menginginkan pengalaman yang memadukan kedua cita rasa ini menjadi satu.</span>
@@ -82,12 +82,12 @@ const Landing = () => {
                       <span style={{ color: "red" }}>Rp.15.000</span>
                     </Card.Text>
                   </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card>
-                  <Card.Img variant="top" src="src/gambar/caffe/kopi2.jpeg" style={{ width: '100%' }} />
-                  <Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card>
+            <Card.Img variant="top" src="/gambar/caffe/kopi2.jpeg" style={{ width: '100%' }} />
+            <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Coffe Latte</span></Card.Title><br />
                     <Card.Text>
                       <span style={{ color: "#2B7A78" }}>Coffe Latte adalah minuman kopi yang lezat dan lembut, terbuat dari kopi espresso yang dicampur dengan susu steamed.</span>
@@ -95,40 +95,40 @@ const Landing = () => {
                       <span style={{ color: "red" }}>Rp.20.000</span>
                     </Card.Text>
                   </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Row>
-              <Col md={4}>
-                <Card>
-                  <Card.Img variant="top" src="src/gambar/fresh/fres2.jpeg" style={{ width: '100%' }} />
-                  <Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Carousel.Item>
+    <Carousel.Item>
+      <Row>
+        <Col md={4}>
+          <Card>
+            <Card.Img variant="top" src="/gambar/fresh/fres2.jpeg" style={{ width: '100%' }} />
+            <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Grape Squash</span></Card.Title>
                     <Card.Text><span style={{ color: "#2B7A78" }}>Grape squash memiliki rasa alami buah anggur yang khas, dengan sentuhan manis yang lezat. Ini adalah pilihan yang sempurna untuk melepas dahaga dan menikmati rasa segar buah anggur kapan saja.</span>
                       <br /><br />
                       <span style={{ color: "red" }}>Rp.17.000</span>
                     </Card.Text>
                   </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card>
-                  <Card.Img variant="top" src="src/gambar/fresh/fres3.jpeg" style={{ width: '100%' }} />
-                  <Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card>
+            <Card.Img variant="top" src="/gambar/fresh/fres3.jpeg" style={{ width: '100%' }} />
+            <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Cream Blue</span></Card.Title>
                     <Card.Text><span style={{ color: "#2B7A78" }}>Cream blue adalah pilihan yang populer di kalangan pecinta makanan dan minuman yang mencari sesuatu yang istimewa dan berbeda.</span>
                       <br /><br />
                       <span style={{ color: "red" }}>Rp.20.000</span>
                     </Card.Text>
                   </Card.Body>
-                </Card>
-              </Col>
-              <Col md={4}>
-                <Card>
-                  <Card.Img variant="top" src="src/gambar/fresh/fres4.jpeg" style={{ width: '100%' }} />
-                  <Card.Body>
+          </Card>
+        </Col>
+        <Col md={4}>
+          <Card>
+            <Card.Img variant="top" src="/gambar/fresh/fres4.jpeg" style={{ width: '100%' }} />
+            <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Placeholder Title</span></Card.Title>
                     <Card.Text>
                       <span style={{ color: "#2B7A78" }}>Minuman ini memiliki rasa manis dan segar dari anggur, dengan kelembutan dan kekentalan dari yogurt atau susu.</span>
@@ -136,17 +136,18 @@ const Landing = () => {
                       <span style={{ color: "red" }}>Rp.18.000</span>
                     </Card.Text>
                   </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Carousel.Item>
-        </Carousel>
-      </div><br />
+          </Card>
+        </Col>
+      </Row>
+    </Carousel.Item>
+  </Carousel>
+</div>
+
 
       <div className="body2"><br />
         <h1 style={{ fontFamily: "Garamond, serif", color: "#2B7A78" }}>Our Story !</h1><br />
         <img
-          src="src/gambar/icon/gambartoko.jpeg"
+          src="/gambar/icon/gambartoko.jpeg"
           alt="Foto Pemilik"
           style={{ maxWidth: "100%", height: "auto" }}
         />

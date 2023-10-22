@@ -154,14 +154,14 @@ const Recipe = () => {
   };
 
   const handleBayarQR = () => {
-    const qrCodeImageUrl = 'src/gambar/icon/kodeQR.jpeg';
+    const qrCodeImageUrl = '/gambar/icon/kodeQR.jpeg';
     alertWithImage(qrCodeImageUrl);
   };
 
   const alertWithImage = (imageUrl) => {
     const img = new Image();
     img.src = imageUrl;
-    img.style.maxWidth = '100%';
+    img.style.maxWidth = '10%';
     img.style.height = 'auto';
 
     const alertContent = document.createElement('div');
