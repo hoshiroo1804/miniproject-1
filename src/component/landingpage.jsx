@@ -4,6 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import './body.css';
+import {icon1} from "../assets/"; 
 import {icon3} from "../assets/";
 import {fresh2} from "../assets/";
 import {fresh3} from "../assets/";
@@ -154,7 +155,7 @@ const Landing = () => {
       <div className="body2"><br />
         <h1 style={{ fontFamily: "Garamond, serif", color: "#2B7A78" }}>Our Story !</h1><br />
         <img
-          src="/gambar/icon/gambartoko.jpeg"
+          src={icon1}
           alt="Foto Pemilik"
           style={{ maxWidth: "100%", height: "auto" }}
         />
