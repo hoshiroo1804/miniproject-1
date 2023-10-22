@@ -4,6 +4,13 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import './body.css';
+import {icon3} from "../assets/";
+import {fresh2} from "../assets/";
+import {fresh3} from "../assets/";
+import {fresh4} from "../assets/";
+import {fresh5} from "../assets/";
+import {caffe10} from "../assets/";
+import {caffe11} from "../assets/";
 
 const Landing = () => {
   const headerStyle = {
@@ -46,7 +53,7 @@ const Landing = () => {
           </div>
           <div className="col-md-6 d-flex justify-content-center align-items-center">
           <img
-              src="/gambar/icon/kopi.png"
+              src= {icon3}
               alt="Static Image"
               style={{ maxWidth: "400px", maxHeight: "300px" }}
             />
@@ -60,7 +67,7 @@ const Landing = () => {
       <Row>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="/gambar/caffe/kopi1.jpeg" style={{ width: '100%' }} />
+            <Card.Img variant="top" src={caffe11} style={{ width: '100%' }} />
             <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Ice Americano</span></Card.Title><br />
                     <Card.Text>
@@ -73,7 +80,7 @@ const Landing = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="/gambar/fresh/fres1.jpeg" style={{ width: '100%' }} />
+            <Card.Img variant="top" src= {fresh2} style={{ width: '100%' }} />
             <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Matcha Oreo</span></Card.Title>
                     <Card.Text>
@@ -86,7 +93,7 @@ const Landing = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="/gambar/caffe/kopi2.jpeg" style={{ width: '100%' }} />
+            <Card.Img variant="top" src={caffe10} style={{ width: '100%' }} />
             <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Coffe Latte</span></Card.Title><br />
                     <Card.Text>
@@ -103,7 +110,7 @@ const Landing = () => {
       <Row>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="/gambar/fresh/fres2.jpeg" style={{ width: '100%' }} />
+            <Card.Img variant="top" src={fresh3} style={{ width: '100%' }} />
             <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Grape Squash</span></Card.Title>
                     <Card.Text><span style={{ color: "#2B7A78" }}>Grape squash memiliki rasa alami buah anggur yang khas, dengan sentuhan manis yang lezat. Ini adalah pilihan yang sempurna untuk melepas dahaga dan menikmati rasa segar buah anggur kapan saja.</span>
@@ -115,7 +122,7 @@ const Landing = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="/gambar/fresh/fres3.jpeg" style={{ width: '100%' }} />
+            <Card.Img variant="top" src={fresh4} style={{ width: '100%' }} />
             <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Cream Blue</span></Card.Title>
                     <Card.Text><span style={{ color: "#2B7A78" }}>Cream blue adalah pilihan yang populer di kalangan pecinta makanan dan minuman yang mencari sesuatu yang istimewa dan berbeda.</span>
@@ -127,7 +134,7 @@ const Landing = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="/gambar/fresh/fres4.jpeg" style={{ width: '100%' }} />
+            <Card.Img variant="top" src={fresh5} style={{ width: '100%' }} />
             <Card.Body>
                     <Card.Title><span style={{ color: "#2B7A78" }}>Placeholder Title</span></Card.Title>
                     <Card.Text>
