@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Container, Nav, Card, Row, Col, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Body.css';
+import './body.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import openai from 'openai';
