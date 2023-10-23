@@ -23,11 +23,6 @@ import {fresh19} from "../assets/";
 import {fresh20} from "../assets/";
 import {fresh21} from "../assets/";
 import {fresh22} from "../assets/";
-import {caffe1} from "../assets/";
-import {caffe2} from "../assets/";
-import {caffe3} from "../assets/";
-import {caffe4} from "../assets/";
-import {caffe5} from "../assets/";
 import {caffe6} from "../assets/"; 
 import {caffe7} from "../assets/"; 
 import {caffe8} from "../assets/"; 
@@ -251,7 +246,6 @@ class MenuMinuman extends Component {
                 <div className="fot-3 col-md-4 col-lg-4 col-xl-5">
                   <h2 className="title-3" style={{ fontFamily: "Garamond, serif" }}>Drin-King</h2>
                 </div>
-
                 <p>
                   This is a website that I created. I named this website DRIN-KING after the name of the creator. This website is under development. If you have questions, etc., you can contact the contact listed or the social media listed.
                 </p>
@@ -291,11 +285,11 @@ class MenuMinuman extends Component {
             </div>
           </div>
 
-          <div className="sikil">
-            <p className="text">
-              &copy; 2023 Devita Nela Aprilia - Capek mas wkwk
-            </p>
-          </div>
+            <div className="sikil">
+              <p className="text">
+                &copy; 2023 Devita Nela Aprilia - Capek mas wkwk
+              </p>
+            </div>
         </footer>
       </div>
     );

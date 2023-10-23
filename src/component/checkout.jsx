@@ -6,11 +6,10 @@ import axios from 'axios';
 
 const Checkout = () => {
   const [formData, setFormData] = useState({
-    id: '',
     nama: '',
     nomorMeja: '',
     infoTambahan: '',
-    selectedOptions: [],
+    selectedOptions: new Array(8).fill(''),
   });
 
   const [orderStatus, setOrderStatus] = useState(null);
@@ -73,7 +72,6 @@ const Checkout = () => {
       setFormData((prevFormData) => {
         const updatedSelectedOptions = [...prevFormData.selectedOptions];
         updatedSelectedOptions[optionIndex] = selectedOption;
-
         return {
           ...prevFormData,
           selectedOptions: updatedSelectedOptions,
@@ -108,42 +106,7 @@ const Checkout = () => {
   };
 
   const dropdownOptions = [
-    [
-      { label: 'Caffe Latte', price: 25000 },
-      { label: 'Dalgona Coffee', price: 20000 },
-      { label: 'Cream Latte', price: 20000 },
-      { label: 'Cream Puff', price: 25000 },
-      { label: 'Option 7 Name', price: 15000 },
-      { label: 'Option 8 Name', price: 15000 },
-      { label: 'Option 9 Name', price: 15000 },
-      { label: 'Option 10 Name', price: 20000 },
-      { label: 'Dolce Latte', price: 18000 },
-      { label: 'Milk Coffee', price: 20000 },
-      { label: 'Ice Coffee', price: 20000 },
-      { label: 'Milky Latte', price: 20000 },
-      { label: 'Art Latte', price: 25000 },
-      { label: 'Ice Cream Americano', price: 20000 },
-    ],
-    [
-      { label: 'Grape Smoothies', price: 20000 },
-      { label: 'Strawberry Smoothies', price: 25000 },
-      { label: 'Apple Juice', price: 15000 },
-      { label: 'Matcha Cream', price: 25000 },
-      { label: 'Berry Squash', price: 18000 },
-      { label: 'Kiwi Squash', price: 15000 },
-      { label: 'Lemon Squash', price: 15000 },
-      { label: 'Squash Berry Mix', price: 18000 },
-      { label: 'Matcha Berry', price: 20000 },
-      { label: 'Aren Matcha', price: 25000 },
-      { label: 'Peach Squash', price: 20000 },
-      { label: 'Kiwi Lemon Squash', price: 15000 },
-      { label: 'Kiwi Orange Cream', price: 20000 },
-      { label: 'Mix Squash', price: 18000 },
-      { label: 'Sea Squash', price: 20000 },
-      { label: 'Lemon Berry Fun', price: 15000 },
-      { label: 'Orange Juice', price: 12000 },
-      { label: 'Orange Blood', price: 20000 },
-    ],
+    // Daftar pilihan Anda ...
   ];
 
   return (
@@ -188,7 +151,7 @@ const Checkout = () => {
                 />
               </div>
               <div className="form-group" style={formGroupStyle}>
-                <label htmlFor="nomor-meja">Nomor Meja:</label>
+                <label htmlFor="nomorMeja">Nomor Meja:</label>
                 <input
                   type="text"
                   id="nomorMeja"
@@ -242,30 +205,23 @@ const Checkout = () => {
         <br />
       </div>
 
-      <footer id="more">
-        <div className="container">
-          <div className="row text-center mb-3"></div>
-          <div className="row text-md-start mt-5 text-center">
-            <div className="fot-1 col-md-4 col-lg-4 col-xl-4">
-              <div className="fot-3 col-md-4 col-lg-4 col-xl-5">
-                <h2 className="title-3" style={{ fontFamily: "Garamond, serif" }}>Drin-King</h2>
-              </div>
 
+      <footer id="more" className="bg-dark text-white py-4">
+        <Container>
+          <div className="row">
+            <div className="col-md-4">
+              <h2 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Drin-King</h2>
               <p>
-                This is a website that I created. I named this website DRIN-KING after the name of the creator. This website is under development. If you have questions, etc., you can contact the contact listed or the social media
-                listed.
+                This is a website that I created. I named this website DRIN-KING after the name of the creator. This website is under development. If you have questions, etc., you can contact the contact listed or the social media listed.
               </p>
               <a href="#contact-us">
-                <button type="button" className="btn btn-dark btn-lg">
+                <Button variant="dark" className="btn-lg">
                   Contact us
-                </button>
+                </Button>
               </a>
             </div>
-
-            <div className="fot-2 col-md-4 col-lg-4 col-xl-3">
-              <div className="fot-3 col-md-4 col-lg-4 col-xl-5">
-                <h6 className="title-3" style={{ fontFamily: "Garamond, serif" }}>Social Media</h6>
-              </div>
+            <div className="col-md-4">
+              <h6 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Social Media</h6>
               <a className="btn btn-light btn-link btn-floating btn-lg text-primary m-1" href="https://www.facebook.com/devita.nelaaprilia" target="_blank" role="button" data-mdb-ripple-color="dark">
                 <i className="fab fa-facebook-f"></i>
               </a>
@@ -276,22 +232,25 @@ const Checkout = () => {
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
-            <div className="fot-3 col-md-4 col-lg-4 col-xl-5">
-              <h6 className="title-3" style={{ fontFamily: "Garamond, serif" }}>Our Address</h6>
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}>Jl. Ringin Raya No.22, Ngringin, Condongcatur, Kec. Depok,</h5>
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}>Kabupaten Sleman, Daerah Istimewa Yogyakarta 55283, Indonesia</h5>
+            <div className="col-md-4">
+              <h6 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Our Address</h6>
+              <h5 style={{ fontFamily: 'Times New Roman, serif', color: 'white' }}>Jl. Ringin Raya No.22, Ngringin, Condongcatur, Kec. Depok,</h5>
+              <h5 style={{ fontFamily: 'Times New Roman, serif', color: 'white' }}>Kabupaten Sleman, Daerah Istimewa Yogyakarta 55283,</h5>
+              <h5 style={{ fontFamily: 'Times New Roman, serif', color: 'white' }}>Indonesia</h5>
               <br />
               <br />
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}><b>Phone:</b> +62 812 2322 2680</h5>
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}><b>Email:</b> dnelapri@gmail.com</h5>
+              <h5>
+                <b>Phone:</b> +62 812 2322 2680
+              </h5>
+              <h5>
+                <b>Email:</b> dnelapri@gmail.com
+              </h5>
             </div>
           </div>
-        </div>
-
-        <div className="sikil">
-          <p className="text">
-            &copy; 2023 Devita Nela Aprilia - Capek mas wkwk
-          </p>
+        </Container>
+        
+        <div className="text-center py-3">
+          &copy; 2023 Devita Nela Aprilia - Capek mas wkwk
         </div>
       </footer>
     </div>

@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useNavigate } from 'react';
 import axios from 'axios';
-import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Button, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './body.css';
+import {icon2} from '../assets';
 
 const Recipe = () => {
   const [latestOrder, setLatestOrder] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [showQRModal, setShowQRModal] = useState(false); // Define showQRModal state
+  const [qrCodeImageUrl, setQRCodeImageUrl] = useState(''); // Define qrCodeImageUrl state
 
   //section useEffect
   useEffect(() => {
@@ -158,9 +161,13 @@ const Recipe = () => {
   };
 
   const handleBayarQR = () => {
-    const qrCodeImageUrl = '/gambar/icon/kodeQR.jpeg';
-    alertWithImage(qrCodeImageUrl);
+    setQRCodeImageUrl(icon2); // Setel URL gambar QR
+    setShowQRModal(true); // Tampilkan modal
   };
+
+    const closeModal = () => {
+      setShowQRModal(false); // Sembunyikan modal saat tombol "Tutup" diklik
+    };
 
   const alertWithImage = (imageUrl) => {
     const img = new Image();
@@ -319,6 +326,20 @@ const Recipe = () => {
                 <button onClick={handleBayarQR} className="custom-button">
                   Bayar dengan QR
                 </button>
+                <Modal show={showQRModal} onHide={closeModal}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>QR Code</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <img src={qrCodeImageUrl} alt="QR Code" style={{ maxWidth: '100%', height: 'auto' }} />
+                  </Modal.Body>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={closeModal}>
+                      Tutup
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+
                 {isEditing && (
                   <Button variant="danger" className="button" onClick={handleCancelEdit}>
                     Batal
@@ -364,16 +385,14 @@ const Recipe = () => {
             </div>
             <div className="fot-3 col-md-4 col-lg-4 col-xl-5">
               <h6 className="title-3" style={{ fontFamily: "Garamond, serif" }}>Our Address</h6>
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}>Jl. Ringin Raya No.22, Ngringin, Condongcatur, Kec. Depok,</h5>
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}>JlKabupaten Sleman, Daerah Istimewa Yogyakarta 55283,</h5>
-              <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}>Indonesia</h5>
+              <p style={{ fontFamily: "Times New Roman, serif", color: "white" }}>Jl. Ringin Raya No.22, Ngringin, Condongcatur, Kec. Depok,</p>
+              <p style={{ fontFamily: "Times New Roman, serif", color: "white" }}>JlKabupaten Sleman, Daerah Istimewa Yogyakarta 55283,</p>
+              <p style={{ fontFamily: "Times New Roman, serif", color: "white" }}>Indonesia</p>
               <br />
               <br />
               <h5>
-                <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}> <b>Phone:</b> +62 812 2322 2680</h5>
-              </h5>
-              <h5>
-                <h5 style={{ fontFamily: "Times New Roman, serif", color: "white" }}>  <b>Email:</b> dnelapri@gmail.com</h5>
+                <p style={{ fontFamily: "Times New Roman, serif", color: "white" }}> <b>Phone:</b> +62 812 2322 2680</p>
+                <p style={{ fontFamily: "Times New Roman, serif", color: "white" }}>  <b>Email:</b> dnelapri@gmail.com</p>
               </h5>
             </div>
           </div>

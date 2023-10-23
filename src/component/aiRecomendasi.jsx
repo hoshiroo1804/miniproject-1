@@ -19,11 +19,6 @@ import {fresh19} from "../assets/";
 import {fresh20} from "../assets/";
 import {fresh21} from "../assets/";
 import {fresh22} from "../assets/";
-import {caffe1} from "../assets/";
-import {caffe2} from "../assets/";
-import {caffe3} from "../assets/";
-import {caffe4} from "../assets/";
-import {caffe5} from "../assets/";
 import {caffe6} from "../assets/"; 
 import {caffe7} from "../assets/"; 
 import {caffe8} from "../assets/"; 
@@ -104,7 +99,7 @@ class DrinkRecommendationAI extends Component {
         ],
       };
     }
-    
+
   handleSearch = (e) => {
     const keyword = e.target.value.toLowerCase();
     const recommendedDrinks = this.state.menu.filter(drink =>

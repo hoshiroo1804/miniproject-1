@@ -63,93 +63,93 @@ const Landing = () => {
       </div>
 
       <div style={{ textAlign: "center" }}>
-  <Carousel>
-    <Carousel.Item>
-      <Row>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={caffe11} style={{ width: '100%' }} />
-            <Card.Body>
-                    <Card.Title><span style={{ color: "#2B7A78" }}>Ice Americano</span></Card.Title><br />
-                    <Card.Text>
-                      <span style={{ color: "#2B7A78" }}>Ice Americano dikenal dengan ciri khasnya yang memiliki rasa kopi yang kuat dan segar, tanpa tambahan susu atau gula. Minuman ini cocok bagi pecinta kopi yang menyukai rasa kopi yang murni dan ringan, dengan sentuhan penyegaran dari es.</span>
-                      <br /><br />
-                      <span style={{ color: "red" }}>Harga: Rp.20.000</span>
-                    </Card.Text>
-                  </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src= {fresh2} style={{ width: '100%' }} />
-            <Card.Body>
-                    <Card.Title><span style={{ color: "#2B7A78" }}>Matcha Oreo</span></Card.Title>
-                    <Card.Text>
-                      <span style={{ color: "#2B7A78" }}>Minuman Matcha Oreo populer di kalangan pecinta matcha dan pencinta Oreo yang menginginkan pengalaman yang memadukan kedua cita rasa ini menjadi satu.</span>
-                      <br /><br />
-                      <span style={{ color: "red" }}>Rp.15.000</span>
-                    </Card.Text>
-                  </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={caffe10} style={{ width: '100%' }} />
-            <Card.Body>
-                    <Card.Title><span style={{ color: "#2B7A78" }}>Coffe Latte</span></Card.Title><br />
-                    <Card.Text>
-                      <span style={{ color: "#2B7A78" }}>Coffe Latte adalah minuman kopi yang lezat dan lembut, terbuat dari kopi espresso yang dicampur dengan susu steamed.</span>
-                      <br /><br />
-                      <span style={{ color: "red" }}>Rp.20.000</span>
-                    </Card.Text>
-                  </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Carousel.Item>
-    <Carousel.Item>
-      <Row>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={fresh3} style={{ width: '100%' }} />
-            <Card.Body>
-                    <Card.Title><span style={{ color: "#2B7A78" }}>Grape Squash</span></Card.Title>
-                    <Card.Text><span style={{ color: "#2B7A78" }}>Grape squash memiliki rasa alami buah anggur yang khas, dengan sentuhan manis yang lezat. Ini adalah pilihan yang sempurna untuk melepas dahaga dan menikmati rasa segar buah anggur kapan saja.</span>
-                      <br /><br />
-                      <span style={{ color: "red" }}>Rp.17.000</span>
-                    </Card.Text>
-                  </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={fresh4} style={{ width: '100%' }} />
-            <Card.Body>
-                    <Card.Title><span style={{ color: "#2B7A78" }}>Cream Blue</span></Card.Title>
-                    <Card.Text><span style={{ color: "#2B7A78" }}>Cream blue adalah pilihan yang populer di kalangan pecinta makanan dan minuman yang mencari sesuatu yang istimewa dan berbeda.</span>
-                      <br /><br />
-                      <span style={{ color: "red" }}>Rp.20.000</span>
-                    </Card.Text>
-                  </Card.Body>
-          </Card>
-        </Col>
-        <Col md={4}>
-          <Card>
-            <Card.Img variant="top" src={fresh5} style={{ width: '100%' }} />
-            <Card.Body>
-                    <Card.Title><span style={{ color: "#2B7A78" }}>Placeholder Title</span></Card.Title>
-                    <Card.Text>
-                      <span style={{ color: "#2B7A78" }}>Minuman ini memiliki rasa manis dan segar dari anggur, dengan kelembutan dan kekentalan dari yogurt atau susu.</span>
-                      <br /><br />
-                      <span style={{ color: "red" }}>Rp.18.000</span>
-                    </Card.Text>
-                  </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Carousel.Item>
-  </Carousel>
-</div>
+          <Carousel>
+            <Carousel.Item>
+              <Row>
+                <Col md={4}>
+                  <Card>
+                    <Card.Img variant="top" src={caffe11} style={{ width: '100%' }} />
+                    <Card.Body>
+                            <Card.Title><span style={{ color: "#2B7A78" }}>Ice Americano</span></Card.Title><br />
+                            <Card.Text>
+                              <span style={{ color: "#2B7A78" }}>Ice Americano dikenal dengan ciri khasnya yang memiliki rasa kopi yang kuat dan segar, tanpa tambahan susu atau gula. Minuman ini cocok bagi pecinta kopi yang menyukai rasa kopi yang murni dan ringan, dengan sentuhan penyegaran dari es.</span>
+                              <br /><br />
+                              <span style={{ color: "red" }}>Harga: Rp.20.000</span>
+                            </Card.Text>
+                          </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4}>
+                  <Card>
+                    <Card.Img variant="top" src= {fresh2} style={{ width: '100%' }} />
+                    <Card.Body>
+                            <Card.Title><span style={{ color: "#2B7A78" }}>Matcha Oreo</span></Card.Title>
+                            <Card.Text>
+                              <span style={{ color: "#2B7A78" }}>Minuman Matcha Oreo populer di kalangan pecinta matcha dan pencinta Oreo yang menginginkan pengalaman yang memadukan kedua cita rasa ini menjadi satu.</span>
+                              <br /><br />
+                              <span style={{ color: "red" }}>Rp.15.000</span>
+                            </Card.Text>
+                          </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4}>
+                  <Card>
+                    <Card.Img variant="top" src={caffe10} style={{ width: '100%' }} />
+                    <Card.Body>
+                            <Card.Title><span style={{ color: "#2B7A78" }}>Coffe Latte</span></Card.Title><br />
+                            <Card.Text>
+                              <span style={{ color: "#2B7A78" }}>Coffe Latte adalah minuman kopi yang lezat dan lembut, terbuat dari kopi espresso yang dicampur dengan susu steamed.</span>
+                              <br /><br />
+                              <span style={{ color: "red" }}>Rp.20.000</span>
+                            </Card.Text>
+                          </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row>
+                <Col md={4}>
+                  <Card>
+                    <Card.Img variant="top" src={fresh3} style={{ width: '100%' }} />
+                    <Card.Body>
+                            <Card.Title><span style={{ color: "#2B7A78" }}>Grape Squash</span></Card.Title>
+                            <Card.Text><span style={{ color: "#2B7A78" }}>Grape squash memiliki rasa alami buah anggur yang khas, dengan sentuhan manis yang lezat. Ini adalah pilihan yang sempurna untuk melepas dahaga dan menikmati rasa segar buah anggur kapan saja.</span>
+                              <br /><br />
+                              <span style={{ color: "red" }}>Rp.17.000</span>
+                            </Card.Text>
+                          </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4}>
+                  <Card>
+                    <Card.Img variant="top" src={fresh4} style={{ width: '100%' }} />
+                    <Card.Body>
+                            <Card.Title><span style={{ color: "#2B7A78" }}>Cream Blue</span></Card.Title>
+                            <Card.Text><span style={{ color: "#2B7A78" }}>Cream blue adalah pilihan yang populer di kalangan pecinta makanan dan minuman yang mencari sesuatu yang istimewa dan berbeda.</span>
+                              <br /><br />
+                              <span style={{ color: "red" }}>Rp.20.000</span>
+                            </Card.Text>
+                          </Card.Body>
+                  </Card>
+                </Col>
+                <Col md={4}>
+                  <Card>
+                    <Card.Img variant="top" src={fresh5} style={{ width: '100%' }} />
+                    <Card.Body>
+                            <Card.Title><span style={{ color: "#2B7A78" }}>Placeholder Title</span></Card.Title>
+                            <Card.Text>
+                              <span style={{ color: "#2B7A78" }}>Minuman ini memiliki rasa manis dan segar dari anggur, dengan kelembutan dan kekentalan dari yogurt atau susu.</span>
+                              <br /><br />
+                              <span style={{ color: "red" }}>Rp.18.000</span>
+                            </Card.Text>
+                          </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+        </div>
 
 
       <div className="body2"><br />
