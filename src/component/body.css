@@ -95,8 +95,6 @@ footer {
 }
 
 
-/* Sesuaikan file CSS dengan komponen MenuMinuman.js */
-
 /* Kontainer untuk daftar menu */
 .menu-list {
   display: flex;
@@ -161,8 +159,6 @@ footer {
   }
 }
 
-
-/* Css Form Checkout */
 
 /* Styling container */
 .order-form-container {
@@ -257,9 +253,6 @@ button[type="submit"]:hover {
   background-color: #255E5C;
 }
 
-
-
-
 .select-container {
   display: flex;
   justify-content: space-between;
@@ -316,5 +309,14 @@ select:focus {
 .select-container h6 {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.custom-button {
+  background-color: #2B7A78;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Atur radius sesuai keinginan Anda */
 }
 

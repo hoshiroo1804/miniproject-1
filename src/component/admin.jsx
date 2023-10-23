@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
 const Admin = () => {
   const [latestOrders, setLatestOrders] = useState([]);
 
@@ -37,7 +36,7 @@ const Admin = () => {
 
   return (
     <div>
-      <Navbar expand="lg" style={headerStyle}>
+      <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand>Drin-King</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -57,7 +56,7 @@ const Admin = () => {
       <div className="body2">
         <h1>Data Pesanan Terbaru</h1>
         {latestOrders.length > 0 ? (
-          <table className="table" style={{ backgroundColor: '#def2f1' }}>
+          <table className="table table-bordered table-striped table-responsive">
             <thead>
               <tr>
                 <th>ID</th>
@@ -96,28 +95,22 @@ const Admin = () => {
         )}
       </div>
 
-      <footer id="more">
-        <div className="container">
-          <div className="row text-center mb-3"></div>
-          <div className="row text-md-start mt-5 text-center">
-            <div className="col-md-4 col-lg-4 col-xl-4">
-              <div className="fot-3">
-                <h2 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Drin-King</h2>
-              </div>
+      <footer id="more" className="bg-dark text-white py-4">
+        <Container>
+          <div className="row">
+            <div className="col-md-4">
+              <h2 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Drin-King</h2>
               <p>
                 This is a website that I created. I named this website DRIN-KING after the name of the creator. This website is under development. If you have questions, etc., you can contact the contact listed or the social media listed.
               </p>
               <a href="#contact-us">
-                <button type="button" className="btn btn-dark btn-lg">
+                <Button variant="dark" className="btn-lg">
                   Contact us
-                </button>
+                </Button>
               </a>
             </div>
-
-            <div className="col-md-4 col-lg-4 col-xl-3">
-              <div className="fot-3">
-                <h6 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Social Media</h6>
-              </div>
+            <div className="col-md-4">
+              <h6 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Social Media</h6>
               <a className="btn btn-light btn-link btn-floating btn-lg text-primary m-1" href="https://www.facebook.com/devita.nelaaprilia" target="_blank" role="button" data-mdb-ripple-color="dark">
                 <i className="fab fa-facebook-f"></i>
               </a>
@@ -128,8 +121,7 @@ const Admin = () => {
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
-
-            <div className="col-md-4 col-lg-4 col-xl-5">
+            <div className="col-md-4">
               <h6 className="title-3" style={{ fontFamily: 'Garamond, serif' }}>Our Address</h6>
               <h5 style={{ fontFamily: 'Times New Roman, serif', color: 'white' }}>Jl. Ringin Raya No.22, Ngringin, Condongcatur, Kec. Depok,</h5>
               <h5 style={{ fontFamily: 'Times New Roman, serif', color: 'white' }}>Kabupaten Sleman, Daerah Istimewa Yogyakarta 55283,</h5>
@@ -144,12 +136,9 @@ const Admin = () => {
               </h5>
             </div>
           </div>
-        </div>
-
-        <div className="sikil">
-          <p className="text">
-            &copy; 2023 Devita Nela Aprilia - Capek mas wkwk
-          </p>
+        </Container>
+        <div className="text-center py-3">
+          &copy; 2023 Devita Nela Aprilia - Capek mas wkwk
         </div>
       </footer>
     </div>

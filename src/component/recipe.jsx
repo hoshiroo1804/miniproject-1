@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useNavigate } from 'react';
 import axios from 'axios';
 import { Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -109,6 +109,10 @@ const Recipe = () => {
 
   const handleCancelEdit = () => {
     setIsEditing(false);
+  };
+
+  const handleClick = () => {
+    useNavigate('/recipe');
   };
 
   const handleSaveEdit = async () => {
@@ -312,9 +316,9 @@ const Recipe = () => {
                 <Button variant="danger" className="button" onClick={handleDelete}>
                   Hapus
                 </Button>
-                <Button variant="primary" className="button" onClick={handleBayarQR}>
+                <button onClick={handleBayarQR} className="custom-button">
                   Bayar dengan QR
-                </Button>
+                </button>
                 {isEditing && (
                   <Button variant="danger" className="button" onClick={handleCancelEdit}>
                     Batal
