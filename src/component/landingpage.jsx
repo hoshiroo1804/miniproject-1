@@ -114,7 +114,7 @@ const Landing = () => {
                     <Card.Img variant="top" src={fresh3} style={{ width: '100%' }} />
                     <Card.Body>
                             <Card.Title><span style={{ color: "#2B7A78" }}>Grape Squash</span></Card.Title>
-                            <Card.Text><span style={{ color: "#2B7A78" }}>Grape squash memiliki rasa alami buah anggur yang khas, dengan sentuhan manis yang lezat. Ini adalah pilihan yang sempurna untuk melepas dahaga dan menikmati rasa segar buah anggur kapan saja.</span>
+                            <Card.Text><span style={{ color: "#2B7A78" }}>Ini adalah pilihan yang sempurna untuk melepas dahaga dan menikmati rasa segar buah anggur kapan saja.</span>
                               <br /><br />
                               <span style={{ color: "red" }}>Rp.17.000</span>
                             </Card.Text>
