@@ -136,15 +136,15 @@ class DrinkRecommendationAI extends Component {
           </Container>
         </Navbar>
 
-        <div className="container">
-          <h1>Rekomendasi Minuman Berdasarkan Preferensi Anda</h1>
+        <div className="container"><br />
+          <h4>Rekomendasi Minuman Berdasarkan Preferensi Anda</h4>
           <input
             type="text"
             placeholder="Cari minuman..."
             value={this.state.userKeyword}
             onChange={this.handleSearch}
-          />
-          <h2>Minuman yang Direkomendasikan:</h2>
+          /><br /><br />
+          <h4>Minuman yang Direkomendasikan:</h4>
           <div className="recommended-drinks">
             {this.state.userKeyword && this.state.recommendedDrinks.length > 0 ? (
               this.state.recommendedDrinks.map(drink => (
