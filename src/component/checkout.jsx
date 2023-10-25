@@ -240,6 +240,7 @@ const Checkout = () => {
         <br />
       </div>
 
+{/* Footer */}
       <footer id="more">
         <div className="container">
           <div className="row text-center mb-3"></div>
