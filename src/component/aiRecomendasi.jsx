@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import {fresh5} from "../assets/";
 import {fresh6} from "../assets/";
@@ -36,6 +37,7 @@ import {caffe19} from "../assets/";
 import {caffe20} from "../assets/";
 import {caffe21} from "../assets/";
 import {caffe22} from "../assets/";
+import './body.css'; // Tambahkan file CSS yang mengatur tampilan
 
 class DrinkRecommendationAI extends Component {
   constructor(props) {
@@ -100,6 +102,7 @@ class DrinkRecommendationAI extends Component {
       };
     }
 
+
   handleSearch = (e) => {
     const keyword = e.target.value.toLowerCase();
     const recommendedDrinks = this.state.menu.filter(drink =>
@@ -117,7 +120,7 @@ class DrinkRecommendationAI extends Component {
     return (
       <div>
         <Navbar expand="lg" style={headerStyle}>
-          <Container>
+        <Container>
             <Navbar.Brand style={{ color: 'white', fontSize: '16px' }}>Drin-King</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -133,27 +136,29 @@ class DrinkRecommendationAI extends Component {
           </Container>
         </Navbar>
 
-        <h1>Rekomendasi Minuman Berdasarkan Preferensi Anda</h1>
-        <input
-          type="text"
-          placeholder="Cari minuman..."
-          value={this.state.userKeyword}
-          onChange={this.handleSearch}
-        />
-        <h2>Minuman yang Direkomendasikan:</h2>
-        <ul>
-          {this.state.userKeyword && this.state.recommendedDrinks.length > 0 ? (
-            this.state.recommendedDrinks.map(drink => (
-              <li key={drink.id}>
-                <img src={drink.gambar} alt={drink.nama} />
-                <p>{drink.nama}</p>
-                <p>{drink.harga}</p>
-              </li>
-            ))
-          ) : (
-            <p>Tidak ada minuman yang direkomendasikan.</p>
-          )}
-        </ul>
+        <div className="container">
+          <h1>Rekomendasi Minuman Berdasarkan Preferensi Anda</h1>
+          <input
+            type="text"
+            placeholder="Cari minuman..."
+            value={this.state.userKeyword}
+            onChange={this.handleSearch}
+          />
+          <h2>Minuman yang Direkomendasikan:</h2>
+          <div className="recommended-drinks">
+            {this.state.userKeyword && this.state.recommendedDrinks.length > 0 ? (
+              this.state.recommendedDrinks.map(drink => (
+                <div className="drink-item" key={drink.id}>
+                  <img src={drink.gambar} alt={drink.nama} />
+                  <p>{drink.nama}</p>
+                  <p>{drink.harga}</p>
+                </div>
+              ))
+            ) : (
+              <p>Tidak ada minuman yang direkomendasikan.</p>
+            )}
+          </div>
+        </div>
 
         <footer id="more">
           <div className="container">

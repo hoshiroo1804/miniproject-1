@@ -319,3 +319,19 @@ select:focus {
   border-radius: 5px; /* Atur radius sesuai keinginan Anda */
 }
 
+.recommended-drinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drink-item {
+  width: 100%; /* Gambar akan menyesuaikan lebar container */
+  max-width: 300px; /* Lebar maksimum gambar */
+  margin: 10px;
+  text-align: center;
+}
+
+.drink-item img {
+  max-width: 100%; /* Gambar tidak akan melebihi lebar container */
+  height: auto; /* Gambar akan tetap proporsional */
+}
