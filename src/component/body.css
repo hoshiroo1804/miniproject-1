@@ -5,6 +5,8 @@
     justify-content: center;
     min-height: 100vh;
     background-color: #3AAFA9; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    padding-left: 40px; /* Tambahkan padding kiri */
+    padding-right: 40px;
   }
   
   .body2{

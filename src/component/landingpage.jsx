@@ -63,7 +63,7 @@ const Landing = () => {
       </div>
 
       <div style={{ textAlign: "center" }}>
-          <Carousel>
+      <Carousel style={{ padding: '50px ' }}>
             <Carousel.Item>
               <Row>
                 <Col md={4}>
