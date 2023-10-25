@@ -72,7 +72,7 @@ const Landing = () => {
                     <Card.Body>
                             <Card.Title><span style={{ color: "#2B7A78" }}>Ice Americano</span></Card.Title><br />
                             <Card.Text>
-                              <span style={{ color: "#2B7A78" }}>Ice Americano dikenal dengan ciri khasnya yang memiliki rasa kopi yang kuat dan segar, tanpa tambahan susu atau gula. Minuman ini cocok bagi pecinta kopi yang menyukai rasa kopi yang murni dan ringan, dengan sentuhan penyegaran dari es.</span>
+                              <span style={{ color: "#2B7A78" }}>Minuman ini cocok bagi pecinta kopi yang menyukai rasa kopi yang murni dan ringan, dengan sentuhan penyegaran dari es.</span>
                               <br /><br />
                               <span style={{ color: "red" }}>Harga: Rp.20.000</span>
                             </Card.Text>
